@@ -18,12 +18,14 @@ public class MessageService {
     }
 // listar mensajes
     public static void listMessages(){
-        System.out.println("listado de tus msjs");
-
+        MessageDataAccessObject.readMessageDB();
     }
 
     public static void delMessage(){
-        System.out.println("borrar msj");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Indique ID a borrar:");
+        int idToDel = sc.nextInt();
+        MessageDataAccessObject.deleteMessageDB(idToDel);
     }
 
     public static void edMessage(){
