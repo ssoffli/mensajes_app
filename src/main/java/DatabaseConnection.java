@@ -10,8 +10,8 @@ public class DatabaseConnection {
             if (myConnection!=null){
                 System.out.println("conexion exitosa");
             }
-        } catch (SQLException e) {
-            System.out.println(e);
+        } catch (SQLException expt) {
+            System.out.println(expt);
         }
         return myConnection;
     }

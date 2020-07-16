@@ -14,7 +14,6 @@ public class MessageService {
         record.setMessageAuthor(messageAuthor);
 
         MessageDataAccessObject.createMessageDB(record);
-
     }
 // listar mensajes
     public static void listMessages(){
